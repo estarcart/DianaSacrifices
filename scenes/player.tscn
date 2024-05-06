@@ -82,10 +82,9 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_srwt5"]
 radius = 5.0
-height = 18.0
+height = 26.0
 
 [node name="Player" type="CharacterBody2D"]
-light_mask = 2
 motion_mode = 1
 script = ExtResource("1_yb010")
 
@@ -95,4 +94,5 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
 shape = SubResource("CapsuleShape2D_srwt5")

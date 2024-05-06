@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxebc56xmuxu0"]
+[gd_scene load_steps=6 format=3 uid="uid://dxebc56xmuxu0"]
 
 [ext_resource type="Texture2D" uid="uid://b0cghd1qq3oc2" path="res://assets/TileSets/TileMap.png" id="1_47yp8"]
 [ext_resource type="PackedScene" uid="uid://ctfenucsxbm6h" path="res://scenes/player.tscn" id="1_yolfm"]
+[ext_resource type="Script" path="res://scripts/spawner.gd" id="4_nk4a2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_olu3q"]
 texture = ExtResource("1_47yp8")
@@ -91,3 +92,6 @@ z_index = 1
 position = Vector2(1, 2)
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_nk4a2")
