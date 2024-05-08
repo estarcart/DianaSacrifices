@@ -7,10 +7,10 @@ func _physics_process(delta):
 	velocity.x = directionX * SPEED
 	velocity.y = directionY * SPEED
 	
-	#if directionX && directionY == 0:
-	#	animated_sprite.play("idle")
-	#else:
-	#	animated_sprite.play("run")
+	if velocity.length() > 0.0:
+		animated_sprite.play("run")
+	else:
+		animated_sprite.play("idle")
 	
 	
 	
